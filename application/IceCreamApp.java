@@ -6,7 +6,9 @@ import be.vdab.sellers.*;
 public class IceCreamApp {
     public static void main(String[] args) {
         PriceList priceList = new PriceList(0.75, 1.5, 1.5);
-
+        
+        
+        // In de opgave stond dat je het nieuwe salon een een referentie var van type IceCreamSeller moest steken.
         IceCreamSalon iceCreamSalon = new IceCreamSalon(priceList);
 
         IceRocket boughtIceRocket = iceCreamSalon.orderIceRocket();
