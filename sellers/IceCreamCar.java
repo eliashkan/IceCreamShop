@@ -31,6 +31,12 @@ public class IceCreamCar implements IceCreamSeller{
             profit += pricelist.getRocketPrice();
             stock.setIceRockets(stock.getIceRockets() - 1);
             return orderedIceRocket;
+            
+        /** else {
+                throw new Exception();
+            } 
+        Liefst op deze manier braces ipv single line */
+            
         } else throw new NoMoreIceCreamException("We do not have any Ice Rockets left in stock.");
     }
 
